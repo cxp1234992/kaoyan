@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
-plt.rcParams['font.sans-serif'] = ['SimSun']  # 设置中文显示
+plt.rcParams['font.sans-serif'] = ['Noto Sans CJK SC', 'STHeiti', 'Arial Unicode MS', 'Arial Unicode']  # 设置中文显示
 plt.rcParams['axes.unicode_minus'] = False  # 处理负号显示问题
 
 

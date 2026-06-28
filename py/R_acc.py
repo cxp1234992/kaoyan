@@ -36,7 +36,7 @@ class AccuracyAnalyzer:
         """
         绘制正确率随刷题次数的变化曲线图
         """
-        plt.rcParams['font.sans-serif'] = ['SimSun']  # 设置中文显示
+        plt.rcParams['font.sans-serif'] = ['Noto Sans CJK SC', 'STHeiti', 'Arial Unicode MS', 'Arial Unicode']  # 设置中文显示
         plt.rcParams['axes.unicode_minus'] = False  # 处理负号显示问题
 
         # 将x设为index+df的'书名'列，这样就可以显示次数+书名

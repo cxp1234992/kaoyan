@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib import gridspec
 import numpy as np
 
-plt.rcParams['font.sans-serif'] = ['SimHei']
+plt.rcParams['font.sans-serif'] = ['Noto Sans CJK SC', 'STHeiti', 'Arial Unicode MS', 'Arial Unicode']
 plt.rcParams['axes.unicode_minus'] = False
 
 
