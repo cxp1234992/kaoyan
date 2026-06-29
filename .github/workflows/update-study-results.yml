@@ -6,7 +6,9 @@ on:
       - main
     paths:
       - "data/**/*.md"
+      - "我的考研系统/**/*.md"
       - "py/**/*.py"
+      - "tools/**/*.py"
       - "requirements.txt"
       - ".github/workflows/update-study-results.yml"
   workflow_dispatch:
@@ -42,8 +44,13 @@ jobs:
           MPLBACKEND: Agg
         run: python auto_run.py
 
+      - name: Generate personal dashboard
+        env:
+          MPLBACKEND: Agg
+        run: python tools/generate_personal_dashboard.py
+
       - name: Commit generated results
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update generated study results"
-          file_pattern: "data/xlsx/*.xlsx data/pic/**/*.png"
+          file_pattern: "data/xlsx/*.xlsx data/pic/**/*.png 我的考研系统/可视化/*"
